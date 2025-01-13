@@ -1,5 +1,5 @@
 const parseImgList = function(data) {
-    const lines = data.split("\n");
+    const lines = data.trim().split("\n");
 
     return lines.map(function(line, i) {
         const fields = line.split("\t");
