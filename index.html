@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" style="height:50vh;">
+            <div id="image-container" class="col-6 text-right" style="padding-right:10px;">
+                <img id="img">
+            </div>
+            <div class="col-6 text-left" style="padding-top:calc(25vh - 53.5px);padding-left:10px;">
+                <div style="padding-bottom:10px;">
+                    <button id="accept-button">Accept</button>
+                </div>
+                <div style="padding-bottom:10px;">
+                    <button id="reject-button">Reject</button>
+                </div>
+                <div>
+                    <button id="unsure-button">Unsure</button>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="padding-top:10px;padding-bottom:10px;">
+            <div id="button-row" class="col" style="text-wrap:nowrap;overflow-x:scroll;"></div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <input id="upload-file" type="file" style="display:none;">
+                <button id="upload-button">Upload image table</button>
+                <button id="save-button">Save image table</button>
+            </div>
+        </div>
+    </div>
+    <script src="misc.js"></script>
+    <script src="upload_file.js"></script>
+    <script src="accept.js"></script>
+    <script src="reject.js"></script>
+    <script src="unsure.js"></script>
+    <script src="save.js"></script>
+</body>
